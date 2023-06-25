@@ -36,4 +36,4 @@ while play_again:
     play_game()
     play_again_str = input("Do you want to play again? (y/n): ")
     play_again = (play_again_str.lower() == "y")
-print("Thanks for playing!")
+print("Thanks for playing, Welcome again")
