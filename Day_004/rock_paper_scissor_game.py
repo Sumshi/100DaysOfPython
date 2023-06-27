@@ -1,19 +1,50 @@
 #!/usr/bin/python3
 import random
-user_choice = int(input("What do you choose? Type 0 for Rock, 1 for paper or 2 for Scissor.\n"))
+rock = '''
+    _______
+---'   ____)
+      (_____)
+      (_____)
+      (____)
+---.__(___)
+'''
+
+paper = '''
+    _______
+---'   ____)____
+          ______)
+          _______)
+         _______)
+---.__________)
+'''
+
+scissors = '''
+    _______
+---'   ____)____
+          ______)
+       __________)
+      (____)
+---.__(___)
+'''
+
+images = [rock, paper, scissors]
+
+your_choice = int(input("What do you choose? Type 0 for Rock, 1 for Paper or 2 for Scissors.\n"))
+print(images[your_choice])
+
 computer_choice = random.randint(0, 2)
-print(f"computer choice  is: {computer_choice}")
-if user_choice >= 3 or user_choice < 0:
-    print("you entered an invalid number")
-elif user_choice == 0 and computer_choice == 2:
-    print("you win!")
-elif computer_choice == 0 and user_choice == 2:
-    print("you lose")
-elif computer_choice > user_choice:
-    print("you lose")
-elif user_choice > computer_choice:
-    print("you win!")
-elif computer_choice == user_choice:
-    print("it is a draw")
-else:
-    print("out of range number")
+print("Computer chose:")
+print(images[computer_choice])
+
+if your_choice >= 3 or your_choice < 0: 
+  print("You typed an invalid number, you lose!") 
+elif your_choice == 0 and computer_choice == 2:
+  print("You win!")
+elif computer_choice == 0 and your_choice == 2:
+  print("You lose")
+elif computer_choice > your_choice:
+  print("You lose")
+elif your_choice > computer_choice:
+  print("You win!")
+elif computer_choice == your_choice:
+  print("It's a draw")
