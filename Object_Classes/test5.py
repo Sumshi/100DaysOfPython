@@ -12,14 +12,14 @@ s1 = Student("John", 101, 23)
 print(getattr(s1, 'name'))
 
 # reset the value of attribute age to 40
-setattr(s1, "age", 23)
+setattr(s1, "age", 40)
 
 # prints the modified value of age
 print(getattr(s1, 'age'))
 
 # It returns true if the object contains the attribute
-
 print(hasattr(s1, 'id'))
+
 # deletes the attribute age
 delattr(s1, 'age')
 

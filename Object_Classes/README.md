@@ -14,3 +14,12 @@ Parameterized Constructor
 Non-parameterized Constructor
 
 In Python, the method the __init__() simulates the constructor of the class. This method is called when the class is instantiated. It accepts the self-keyword as a first argument which allows accessing the attributes or method of the class.
+
+Python built-in class functions
+The built-in functions defined in the class are described in the following table.
+
+SN	Function	Description
+1	getattr(obj,name,default)	It is used to access the attribute of the object.
+2	setattr(obj, name,value)	It is used to set a particular value to the specific attribute of an object.
+3	delattr(obj, name)	It is used to delete a specific attribute.
+4	hasattr(obj, name)	It returns true if the object contains some specific attribute.
