@@ -23,3 +23,15 @@ SN	Function	Description
 2	setattr(obj, name,value)	It is used to set a particular value to the specific attribute of an object.
 3	delattr(obj, name)	It is used to delete a specific attribute.
 4	hasattr(obj, name)	It returns true if the object contains some specific attribute.
+
+
+Along with the other attributes, a Python class also contains some built-in class attributes which provide information about the class.
+
+The built-in class attributes are given in the below table.
+
+SN	Attribute	Description
+1	__dict__	It provides the dictionary containing the information about the class namespace.
+2	__doc__	It contains a string which has the class documentation
+3	__name__	It is used to access the class name.
+4	__module__	It is used to access the module in which, this class is defined.
+5	__bases__	It contains a tuple including all base classes.
