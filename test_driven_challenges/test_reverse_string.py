@@ -13,9 +13,9 @@ class TestReverseString(unittest.TestCase):
         self.assertEqual(reverse_string("1234"), "4321")
         self.assertEqual(reverse_string("mmm"), "mmm")
 
-
     def test_error(self):
         with self.assertRaises(TypeError):
             reverse_string(1, "1")
+
 if __name__ == "main":
     unittest.main()
