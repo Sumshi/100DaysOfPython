@@ -10,18 +10,18 @@ def fizzbuzz(numbers):
     if a number is divisible by 3 and 5 return fizzbuzz
     """
 
-    new_list = []
+    result = []
 
     for num in numbers:
         if type(num) is not int:
             raise TypeError("num must be an integer")
 
         if num % 3 == 0 and num % 5 == 0:
-            new_list.append('fizzbuzz')
-        if num % 3 == 0:
-            new_list.append('fizz')
-        if num % 5 == 0:
-            new_list.append('buzz')
+            result.append('fizzbuzz')
+        elif num % 3 == 0:
+            result.append('fizz')
+        elif num % 5 == 0:
+            result.append('buzz')
         else:
-            new_list.append(num)
+            result.append(str(num))
     return new_list
