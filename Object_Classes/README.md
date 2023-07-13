@@ -35,3 +35,7 @@ SN	Attribute	Description
 3	__name__	It is used to access the class name.
 4	__module__	It is used to access the module in which, this class is defined.
 5	__bases__	It contains a tuple including all base classes.
+
+
+		Example for setattr:
+In the file setattr.py: setattr() sets the attribute name of the person object to the value 'John'. Subsequently, we can access the attribute using dot notation (person.name) and retrieve the value 'John'.
