@@ -84,12 +84,28 @@ class Rectangle(Base):
         """prints string representation of rectangle"""
         return (f"[Rectangle] ({self.id}) {self.__x}/{self.__y} - {self.__width}/{self.__height}")
     
+    def update(self, *args):
+        """assigns an argument to each attribute"""
+        attributes = ['id', 'width', 'height', 'x', 'y']
+        for i, arg in enumerate(args):
+            setattr(self, attributes[i], arg)
+
 if __name__ == "__main__":
 
-    r1 = Rectangle(2, 3, 2, 2)
-    r1.display()
+    r1 = Rectangle(10, 10, 10, 10)
+    print(r1)
 
-    print("---")
+    r1.update(89)
+    print(r1)
 
-    r2 = Rectangle(3, 2, 1, 0)
-    r2.display()
+    r1.update(89, 2)
+    print(r1)
+
+    r1.update(89, 2, 3)
+    print(r1)
+
+    r1.update(89, 2, 3, 4)
+    print(r1)
+
+    r1.update(89, 2, 3, 4, 5)
+    print(r1)
