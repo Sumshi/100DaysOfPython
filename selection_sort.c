@@ -15,7 +15,7 @@ int main(void)
 		int min_num = i;/*sets min num to be at first index*/
 		for (j = i + 1; j < length; j++)
 		{
-			if (a[j] > a[min_num])/*use > to sort in descending*/
+			if (a[j] < a[min_num])/*use > to sort in descending*/
 			{
 				min_num = j;
 			}
