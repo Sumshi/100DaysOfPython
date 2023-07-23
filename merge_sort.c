@@ -1,9 +1,14 @@
-#include "sort.h"
+#include <stdio.h>
+#include<stdlib.h>
 /**
  * merge_sort - sorts an array of integers in ascending order
  * @array: array to be sorted
  * @size: size of the array
  */
+void merge_sort(int *array, size_t size);
+void merge_sort_helper(int *array, int left, int right, int *tmp);
+void merge(int *array, int left, int mid, int right, int *tmp);
+
 void merge_sort(int *array, size_t size)
 {
 	int *tmp = NULL;
@@ -69,4 +74,17 @@ void merge(int *array, int left, int mid, int right, int *tmp)
 
 	for (i = left; i < right; i++)
 		array[i] = tmp[i];
+}
+
+int main(void)
+{
+	int array[] = {9, 3, 4, 12, 33, 1};
+	int size = 6;
+	int i;
+
+	merge_sort(array, size);
+	for (i = 0; i < size; i++)
+		printf("%d ", array[i]);
+	printf("\n");
+	return (0);
 }
