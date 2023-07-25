@@ -2,8 +2,8 @@
 #include <stdlib.h>
 /**
  * cocktail_sort_array - Sorts an array of integers in ascending order
- *                        using the Cocktail shaker sort algorithm.
- *
+ * using the Cocktail shaker sort algorithm.
+ * Traverses the list noth forward and backward 
  * @array: Pointer to the array to be sorted.
  * @size: Size of the array.
  */
@@ -35,7 +35,7 @@ void cocktail_sort_array(int *array, size_t size)
 
         swapped = 0;
 
-        for (right = 0; right < size - 1; right--)
+        for (right = size - 1; right > 0; right--)
         {/*traverses the array from right to left*/
             if (array[right] < array[right - 1])
             {
