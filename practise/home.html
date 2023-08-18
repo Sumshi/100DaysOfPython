@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>my first page</title>
+    </head>
+    <body>
+        <h1>This is a summary page on html used for practicing</h1>
+        <img src="car2.jpeg"
+        alt="car image"
+        height=100>
+
+        <a target="_blank" href="https://github.com/Sumshi/AirBnB_clone"
+            title="goes to github">
+            click me
+            </a>
+<!-- add an audio-->
+            <audio controls>
+                <source src="Flying - https___drive.google.com_file_d_1JmJrz8nQOp7uSM7O3BLJoJzVqrBy6Wgh_view.mp3">
+                </audio>
+<!--include video also
+<video src="zelda.mp4 width=500px" controls autoplay muted loop></video>
+-->
+
+<!--text formating practice-->
+<p>i love learning <b>html</b></p>
+<p>i love learning <i>html</p></i>
+<p>i love learning <em>html</p></body></em>
+<p>i love learning <u>html</p></html></u>
+<p>i love learning <del>html</p></del>
+<p>i love eating <sub>food</p></sub>
+<p>i love eating <sup>food</p></sup>
+<p>i love eating <mark>food</p></mark>
+<p>i love eating <mark>food</p></mark>
+
+<!-- div and span tags-->
+<h1><span style="background-color: purple;">This is a span title</h1></span>
+<h1><div style="background-color: green;">This is a span title</h1></div>
+<h1>This is a span title</h1>
+<!--Difference between div and span is that
+div selects the entire block or width of that text
+
+while span is an inline container it only selects a 
+specific portion of text within a larger block, while div selects 
+the whole block-->
+
+<p><span style="background-color: blue;">This is a span sentence</p></span>
+<p><div style="background-color: rgb(230, 16, 51);">This is a div sentence</div></p>
+
+<!--html lists
+unordered lists
+ordered lists
+description list
+-->
+
+<!--unordered lists-->
+<ul>
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+  </ul>
+
+  <h2>Unordered List with Square Bullets</h2>
+<!--list type for unordered can be square,disk,none or circle-->
+<ul style="list-style-type:square;">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+
+
+  <!--ordered lists-->
+  <ol>
+    <li>Tea</li>
+    <li>Milk</li>
+    <li>Coffee types</li>
+    <ul>
+        <li>coffee beans</li>
+        <li>creamer</li>
+        <li>sugar</li>
+    </ul>
+  </ol>
+
+  <!--Description lists
+The <dl> tag defines the description list,
+the <dt> tag defines the term (name)
+ <dd> tag describes each term:-->
+    <dl style="background-color: blueviolet;
+    border: 3px solid;">
+        <dt>Coffee</dt>
+        <dd>- black hot drink</dd>
+        <dt>Milk</dt>
+        <dd>- white cold drink</dd>
+      </dl>
+
+      <!--tables in html-->
+      <!--td refers to table cells
+      tr refers to table rows
+      th refers to table header-->
+      <table>
+        <tr>
+          <th>Company</th>
+          <th>Contact</th>
+          <th>Country</th>
+        </tr>
+        <tr>
+          <td>Alfreds Futterkiste</td>
+          <td>Maria Anders</td>
+          <td>Germany</td>
+        </tr>
+        <tr>
+          <td>Centro comercial Moctezuma</td>
+          <td>Francisco Chang</td>
+          <td>Mexico</td>
+        </tr>
+      </table>
+<br>
+
+      <table border="3" style="background-color: aqua;">
+        <tr align="centre">
+          <th width="100">Person 1</th>
+          <th width="100">Person 2</th>
+          <th width="100">Person 3</th>
+        </tr>
+        <tr>
+          <td>Emil</td>
+          <td>Tobias</td>
+          <td>Linus</td>
+        </tr>
+        <tr>
+          <td>16</td>
+          <td>14</td>
+          <td>10</td>
+        </tr>
+      </table>
+<br>
+    <!--buttons-->
+    <a href="https://www.youtube.com/watch?v=HGTJBPNC-Gw">
+    <button style="font-size: 25px;
+    background-color: brown;
+    color: blanchedalmond;
+    border-radius: 100px;">click me </button>
+    </a>
+<!--forms-->
+    <form>
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+        <label for="vehicle1"> I have a bike</label><br>
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+        <label for="vehicle2"> I have a car</label><br>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+        <label for="vehicle3"> I have a boat</label>
+      </form>
+
+      <form action="index.php" method="POST">
+        <label for="username:">username</label>
+      <input type="text" id="username" required>
+<br>
+      <label for="password:">username</label>
+      <input type="password" id="password">
+
+      <label for="email">email</label>
+      <input type="email" id="email" placeholder="maya@gmail.com"><br>
+      <input type="submit">
+      <input type="reset"><br>
+    </form>
+
+    <!--header and footers
+    headers are used as introductory part on the top
+footers are at the bottom-->
+
+<header style="background-color: blueviolet;">
+    <h1>welcome to html</h1>
+    <a href="">Home</a>
+    <a href="">About us</a>
+    <a href="">Product</a>
+    <a href="">Contact</a>
+</header>
+<main>
+    <h4>check out these cool car</h4>
+    <img src="car2.jpeg" alt="car image">
+</main>
+<footer>
+    <hr>
+    <p>author: sumaya ahmed<br></p>
+    <p>&copy; copyright reserved</p><br>
+    <a href="sumaya:sumayasomow@fake.com">maya@gmail.com</a>
+</footer>
+
+</body>
+</html>
