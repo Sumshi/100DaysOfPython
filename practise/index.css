@@ -64,6 +64,9 @@ h4{
     margin-left: 50px;
     margin-right: 50px;
 }
+/*margin auto the element will stay at the centre
+margin left: auto will push elements to the left most side*/
+
 .wow{
     border: 5px solid;
     font-size: 3em;
@@ -71,4 +74,55 @@ h4{
     width: 250px;
     background-color: rgb(239, 102, 102);
     margin-left: auto;
+}
+
+#img1{
+    float: left;
+    margin-right: 10px;
+}
+.mage{
+    border: 3px;
+    border-style: dotted;
+    border-color: #00ff37;
+}
+.over{
+    border: 5px solid cornflowerblue;
+    margin-top: 10px;
+    height: 100px;
+    overflow: scroll;
+}
+.di{
+    background-color: #00ff33;
+    display: flex;
+    width: 100px;
+    height: 100px;
+}
+.sp{
+    background-color: blue;
+    display: flex;
+    width: 100px;
+    height: 100px;
+}
+
+.wi{
+    border: 2px groove orangered;
+    height: 150px;
+    width: auto;
+    padding: 20px;
+}
+.hi{
+    border: 2px groove #000dff;
+    height: auto;
+    width: auto;
+    padding: 100px;
+}
+
+#pos{
+    width: 200px;
+    height: 200px;
+    background-color: #00ff37;
+    position: relative;
+    float: right;
+    top: 100px;
+    right: 100px;
 }
