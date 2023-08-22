@@ -21,7 +21,7 @@
             <img src="images/logo.png" width="125px">
         </div>
         <nav>
-            <ul>
+            <ul id="menuitems">
                 <li><a href="">Home</a></li>
                 <li><a href="">Products</a></li>
                 <li><a href="">About</a></li>
@@ -30,6 +30,8 @@
             </ul>
         </nav>
         <img src="images/cart.png" width="30px" height="30px">
+        <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+
     </div>
     <div class="row">
         <div class="col-2">
@@ -69,25 +71,25 @@
         <div class="col-4">
             <img src="images/product-1.jpg">
             <h4>Red Printed T-shirts</h4>
-          <div class="ratings">
+            <div class="ratings">
             <i class="fa fa-star" aria-hidden="true"></i>
             <i class="fa fa-star" aria-hidden="true"></i>
             <i class="fa fa-star" aria-hidden="true"></i>
-            <i class="fa fa-star-o" aria-hidden="true"></i>
-            <i class="fa fa-star"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
             </div>
             <p>$50.00</p>
         </div>
         <div class="col-4">
             <img src="images/product-2.jpg">
             <div class="ratings">
+                <h4>Red Printed T-shirts</h4>
                 <i class="fa fa-star" aria-hidden="true"></i>
                 <i class="fa fa-star" aria-hidden="true"></i>
                 <i class="fa fa-star" aria-hidden="true"></i>
                 <i class="fa fa-star" aria-hidden="true"></i>
                 <i class="fa fa-star"></i>
-                </div>
-            <h4>Red Printed T-shirts</h4>
+            </div>
             <p>$50.00</p>
         </div>
         <div class="col-4">
@@ -132,13 +134,13 @@
         <div class="col-4">
             <img src="images/product-6.jpg">
             <div class="ratings">
+                <h4>Red Printed T-shirts</h4>
                 <i class="fa fa-star" aria-hidden="true"></i>
                 <i class="fa fa-star" aria-hidden="true"></i>
                 <i class="fa fa-star" aria-hidden="true"></i>
                 <i class="fa fa-star" aria-hidden="true"></i>
                 <i class="fa fa-star"></i>
                 </div>
-            <h4>Red Printed T-shirts</h4>
             <p>$50.00</p>
         </div>
         <div class="col-4">
@@ -182,13 +184,13 @@
         <div class="col-4">
             <img src="images/product-10.jpg">
             <div class="ratings">
+                <h4>Red Printed T-shirts</h4>
                 <i class="fa fa-star" aria-hidden="true"></i>
                 <i class="fa fa-star" aria-hidden="true"></i>
                 <i class="fa fa-star" aria-hidden="true"></i>
                 <i class="fa fa-star" aria-hidden="true"></i>
                 <i class="fa fa-star"></i>
                 </div>
-            <h4>Red Printed T-shirts</h4>
             <p>$50.00</p>
         </div>
         <div class="col-4">
@@ -319,19 +321,56 @@
                     <div class="footer-col-1">
                         <h3>Download our app</h3>
                         <p>The app is available for both Android and ios devices</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png">
+                        <img src="images/app-store.png">
+                    </div>
                     </div>
                     <div class="footer-col-2">
                         <img src="images/logo-white.png">
                         <p>Our purpose is to make the pleasure and
                             benefits of sports accessible to many
-                        </p>
+                         </p>
                     </div>
                     <div class="footer-col-3">
                         <h3>Useful Links</h3>
-                        <p>The app is available for both Android and ios devices</p>
+                        <ul>
+                            <li>Coupons</li>
+                            <li>Blog Post</li>
+                            <li>Return Policy</li>
+                            <li>Join Affiliate</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-4">
+                        <h3>Follow Us</h3>
+                        <ul>
+                            <li>Facebook</li>
+                            <li>Instagram</li>
+                            <li>Twitter</li>
+                            <li>Youtube</li>
+                        </ul>
                     </div>
                 </div>
+                <hr>
+                <p class="Copyright">Copyright 2023 - Sumaya Ahmed</p>
             </div>
         </div>
+
+        <!--js for toggle menu-->
+
+        <script>
+            var menuitems = document.getElementById("menuitems");
+            menuitems.style.maxHeight = "0px";
+            function menutoggle(){
+                if(menuitems.style.maxHeight == "0px")
+                {
+                    menuitems.style.maxHeight = "200px"
+                }
+                else
+                {
+                    menuitems.style.maxHeight == "0px"
+                }
+            }
+        </script>
 </body>
 </html>
