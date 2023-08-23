@@ -87,10 +87,12 @@ p{
 .col-3 img{
     width: 100%;
 }
+/*playing with small container*/
 .small-container{
     max-width: 1080px;
     margin: auto;
     margin-left: 100px;
+    margin-right: 90px;
     padding-right: 25px;
 }
 .col-4{
