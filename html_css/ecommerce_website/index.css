@@ -91,10 +91,11 @@ p{
 .small-container{
     max-width: 1080px;
     margin: auto;
-    margin-left: 100px;
-    margin-right: 90px;
+    margin-left: 140px;
+    margin-right: 95px;
     padding-right: 25px;
 }
+
 .col-4{
     flex-basis: 25%;/*we need 4 columns 100/4 =25*/
     padding: 10px;
@@ -253,6 +254,38 @@ ul{
     width: 28px;
     margin-left: 20px;
     display: none;
+}
+
+/*all products*/
+.row-2{
+    justify-content: space-between;
+    margin: 100px auto 50px;
+}
+select{
+    border: 1px solid #ff523b;
+    padding: 5px;
+}
+.page-btn{
+    margin: 0 auto 80px;
+}
+.page-btn span{
+    display: inline-block;
+    border: 1px solid #ff523b;
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+}
+
+.page-btn span:hover{
+    background: #ff523b;
+    color: #fff;
+    transition: 0.5s;
+}
+select:focus{
+    outline: none;
 }
 /*media */
 @media only screen and (max-width: 800px){
